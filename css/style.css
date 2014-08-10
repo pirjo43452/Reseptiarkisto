@@ -41,6 +41,14 @@ body {
      padding:0.5em;
 }
 
+.column {
+	float:	left;
+	width:	33%;
+        border-width:thin; 
+        border-style:solid; 
+        text-align: center; 
+}
+
 #footer {
      border:1px solid #000;
      background: #888;
@@ -67,4 +75,12 @@ body {
     border-width:thin; 
     border-style:solid; 
     text-align: center; 
+}
+
+.column b {
+	float:	left;
+	width:	50%;
+        border-width:thin; 
+        border-style:solid; 
+        text-align: left; 
 }
