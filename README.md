@@ -6,7 +6,7 @@ Yleisiä linkkejä:
 * http://pimajand.users.cs.helsinki.fi/Reseptiarkisto/esittelysivu.html
 * https://github.com/pirjo43452/Reseptiarkisto
 * https://github.com/pirjo43452/Reseptiarkisto/tree/master/Dokumentaatio
-* http://pimajand.users.cs.helsinki.fi/ConnectionTest
+* http://t-pimajand.users.cs.helsinki.fi/ConnectionTest
 * http://t-cstunnus.users.cs.helsinki.fi/Tietokantasovellus/html-demo/index
 * http://t-cstunnus.users.cs.helsinki.fi/Tietokantasovellus/Listaustesti
 
