@@ -3,7 +3,7 @@
 
 Yleisiä linkkejä:
 
-* http://pimajand.users.cs.helsinki.fi/Reseptiarkisto/html_demo/index
+* http://pimajand.users.cs.helsinki.fi/Reseptiarkisto/html_demo/index.html
 * http://pimajand.users.cs.helsinki.fi/Reseptiarkisto/esittelysivu.html
 * https://github.com/pirjo43452/Reseptiarkisto
 * https://github.com/pirjo43452/Reseptiarkisto/tree/master/Dokumentaatio
