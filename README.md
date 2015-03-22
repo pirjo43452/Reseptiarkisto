@@ -8,7 +8,7 @@ Yleisiä linkkejä:
 * https://github.com/pirjo43452/Reseptiarkisto/tree/master/Dokumentaatio
 * http://t-pimajand.users.cs.helsinki.fi/ConnectionTest
 * http://t-cstunnus.users.cs.helsinki.fi/Tietokantasovellus/html-demo/index
-* http://t-cstunnus.users.cs.helsinki.fi/Tietokantasovellus/Listaustesti
+* http://t-pimajand.users.cs.helsinki.fi/Tietokantasovellus/Listaustesti
 
 
 ## Reseptiarkisto

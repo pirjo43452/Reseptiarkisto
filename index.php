@@ -1,52 +1,40 @@
-<?php 
-  $tervehdys = "Heippa!"; 
-?><!DOCTYPE HTML>
-<html>
-<head><title><?php echo $tervehdys; ?></title></head>
-<body>
-  <h1><?php echo $tervehdys; ?></h1>
-  <?php echo "Hei maailma!", "Hei ", $nimi; ?>
-  <?php
-  
-//Lista asioista array-tietotyyppiin laitettuna:
-$lista = array("Kirahvi", "Trumpetti", "Jeesus", "Parta");
-?><!DOCTYPE HTML>
-<html>
-  <head><title>Otsikko</title></head>
-  <body>
-    <h1>Listaelementtitesti</h1>
-    <ul>
-    <?php foreach($lista as $asia) { ?>
-      <li><?php echo $asia; ?></li>
-    <?php } ?>
-    </ul>
-  </body>
-</html>
-
-<?php if ($a == 5): ?>
-A is equal to 5
-<?php endif; ?>
-
-
 <?php
-if ($a == 5):
-    echo "a equals 5";
-    echo "...";
-elseif ($a == 6):
-    echo "a equals 6";
-    echo "!!!";
-else:
-    echo "a is neither 5 nor 6";
-endif;
-?>
 
-<?php
-  require 'libs/tietokantayhteys.php';
-  $kysely = getTietokantayhteys()->prepare("SELECT 1");
-  $kysely->execute();
-  
-  echo $kysely->fetchColumn();
-  ?>
+  // Laitetaan virheilmoitukset näkymään
+  error_reporting(E_ALL);
+  ini_set('display_errors', '1');
 
-</body>
-</html>
+  // Selvitetään, missä kansiossa index.php on
+  $script_name = $_SERVER['SCRIPT_NAME'];
+  $explode =  explode('/', $script_name);
+
+  if($explode[1] == 'index.php'){
+    $base_folder = '';
+  }else{
+    $base_folder = $explode[1];
+  }
+
+  // Määritetään sovelluksen juuripolulle vakio BASE_PATH
+  define('BASE_PATH', '/' . $base_folder);
+
+  // Luodaan uusi tai palautetaan olemassaoleva sessio
+  if(session_id() == '') {
+    session_start();
+  }
+
+  // Asetetaan vastauksen Content-Type-otsake, jotta ääkköset näkyvät normaalisti
+  header('Content-Type: text/html; charset=utf-8');
+
+  // Otetaan Composer käyttöön
+  require 'vendor/autoload.php';
+
+  $routes = new \Slim\Slim();
+
+  $routes->get('/tietokantayhteys', function(){
+    DB::test_connection();
+  });
+
+  // Otetaan reitit käyttöön
+  require 'config/routes.php';
+
+  $routes->run();
