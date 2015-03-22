@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://pimajand.users.cs.helsinki.fi/views/login.php">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://pimajand.users.cs.helsinki.fi/Reseptiarkisto/views/sisaankirjautumissivu.php">
 <html>
 <head>
 <title>Reseptiarkisto</title>
@@ -93,4 +93,3 @@
 
 </body>
 </html>
-
